@@ -1,0 +1,25 @@
+{
+  "name": "recipe",
+  "version": "1.0.0",
+  "description": "api call in js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manpreet-singh10196/recipe-api.git"
+  },
+  "author": "Manpreet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manpreet-singh10196/recipe-api/issues"
+  },
+  "homepage": "https://github.com/manpreet-singh10196/recipe-api#readme",
+  "devDependencies": {
+    "webpack": "^4.41.0"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}
