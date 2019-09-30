@@ -3843,9 +3843,22 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
   !*** ./src/js/index.js ***!
   \*************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/lib/index.js):\\nTypeError: Cannot read property 'bindings' of null\\n    at Scope.moveBindingTo (D:\\\\git-project\\\\recipe-search\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\scope\\\\index.js:862:13)\\n    at BlockScoping.updateScopeInfo (D:\\\\git-project\\\\recipe-search\\\\node_modules\\\\babel-plugin-transform-es2015-block-scoping\\\\lib\\\\index.js:364:17)\\n    at BlockScoping.run (D:\\\\git-project\\\\recipe-search\\\\node_modules\\\\babel-plugin-transform-es2015-block-scoping\\\\lib\\\\index.js:330:12)\\n    at PluginPass.BlockStatementSwitchStatementProgram (D:\\\\git-project\\\\recipe-search\\\\node_modules\\\\babel-plugin-transform-es2015-block-scoping\\\\lib\\\\index.js:70:24)\\n    at newFn (D:\\\\git-project\\\\recipe-search\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\visitors.js:195:21)\\n    at NodePath._call (D:\\\\git-project\\\\recipe-search\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\path\\\\context.js:53:20)\\n    at NodePath.call (D:\\\\git-project\\\\recipe-search\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\path\\\\context.js:40:17)\\n    at NodePath.visit (D:\\\\git-project\\\\recipe-search\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\path\\\\context.js:88:12)\\n    at TraversalContext.visitQueue (D:\\\\git-project\\\\recipe-search\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\context.js:120:16)\\n    at TraversalContext.visitSingle (D:\\\\git-project\\\\recipe-search\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\context.js:92:19)\\n    at TraversalContext.visit (D:\\\\git-project\\\\recipe-search\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\context.js:148:19)\\n    at Function.traverse.node (D:\\\\git-project\\\\recipe-search\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\index.js:96:17)\\n    at traverse (D:\\\\git-project\\\\recipe-search\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\index.js:78:12)\\n    at transformFile (D:\\\\git-project\\\\recipe-search\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\transformation\\\\index.js:88:29)\\n    at runSync (D:\\\\git-project\\\\recipe-search\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\transformation\\\\index.js:45:3)\\n    at runAsync (D:\\\\git-project\\\\recipe-search\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\transformation\\\\index.js:35:14)\\n    at process.nextTick (D:\\\\git-project\\\\recipe-search\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\transform.js:34:34)\\n    at process._tickCallback (internal/process/next_tick.js:61:11)\");\n\n//# sourceURL=webpack:///./src/js/index.js?");
+"use strict";
+eval("\n\nvar _test = __webpack_require__(/*! ./test */ \"./src/js/test.js\");\n\nvar _test2 = _interopRequireDefault(_test);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar x = 23; //Global app controller\n\nconsole.log('I imported ' + _test2.default + ' from another module called test.js variable x is ' + x);\n\n//# sourceURL=webpack:///./src/js/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/test.js":
+/*!************************!*\
+  !*** ./src/js/test.js ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nconsole.log('Imported module');\nexports.default = 12345;\n\n//# sourceURL=webpack:///./src/js/test.js?");
 
 /***/ }),
 
