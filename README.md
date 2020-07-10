@@ -1,4 +1,4 @@
-# Recipe-api
+# Recipe-api udemy project
 
 I created a Recipe-api app. I'm going to use Js, html5, css3 .
 
